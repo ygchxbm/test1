@@ -14,7 +14,6 @@ import Add from './components/Add.vue'
   </div>
   <HelloWorld msg="Vite + Vue" />
   <Add />
-  <Sum />
 </template>
 
 <style scoped>
