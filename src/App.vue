@@ -1,7 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Add from './components/Add.vue'
-import Sum from './components/Sum.vue'
 </script>
 
 <template>
