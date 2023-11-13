@@ -1,33 +1,16 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Add from './components/Add.vue'
-import Sum from './components/Sum.vue'
+<script>
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="list-root">
+    <router-view />
   </div>
-  <HelloWorld msg="Vite + Vue" />
-  <Add />
 </template>
-
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.list-root{
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
 }
 </style>
