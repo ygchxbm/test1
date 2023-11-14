@@ -1,10 +1,8 @@
-<script>
+<script setup>
 </script>
 
 <template>
-  <div>
-    <div>HOME</div>
-  </div>
+  <div>CompositeFunction</div>
 </template>
 <style scoped>
 </style>
