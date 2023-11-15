@@ -2,13 +2,13 @@ export default[
     {
         path:'/',
         name:'home',
-        component:()=>import('/src/layout/index.vue'),
+        component:()=>import('@/layout/index.vue'),
         redirect: '/home',
         children:[
             {
                 path: '/home',
                 name: 'home',
-                component: () => import('/src/components/home.vue'),
+                component: () => import('@/components/home.vue'),
                 meta: {
                     title: "首页",
                 }
@@ -16,30 +16,51 @@ export default[
             {
                 path: '/combinedFunction',
                 name: 'combinedFunction',
-                component: () => import('/src/components/combinedFunction/index.vue'),
+                component: () => import('@/components/combinedFunction/index.vue'),
                 meta: {
                     title: "组合式函数",
+                }
+            },
+            {
+                path: '/transition',
+                name: 'transition',
+                component: () => import('@/components/transition/index.vue'),
+                meta: {
+                    title: "过渡动画",
+                }
+            },
+            {
+                path: '/keepAlive',
+                name: 'keepAlive',
+                component: () => import('@/components/keepAlive/index.vue'),
+                meta: {
+                    title: "组件缓存",
+                }
+            },
+            {
+                path: '/teleport',
+                name: 'teleport',
+                component: () => import('@/components/teleport/index.vue'),
+                meta: {
+                    title: "模板传送",
+                }
+            },
+            {
+                path: '/simpleRoute',
+                name: 'simpleRoute',
+                component: () => import('@/components/simpleRoute/index.vue'),
+                meta: {
+                    title: "简单路由",
+                }
+            },
+            {
+                path: '/typescript',
+                name: 'typescript',
+                component: () => import('@/components/typescript/index.vue'),
+                meta: {
+                    title: "typescript",
                 }
             }
         ]
     },
-    // {
-    //     path: '/combinedFunction',
-    //     name: 'combinedFunction',
-    //     component: () => import('/src/components/combinedFunction.vue'),
-    //     meta: {
-    //         title: "函数式编程",
-    //     },
-    //     children:[
-    //         {
-    //             path: '/combinedFunction',
-    //             name: 'combinedFunction',
-    //             component: () => import('/src/components/combinedFunction.vue'),
-    //             meta: {
-    //                 title: "函数式编程",
-    //             }
-    //         }
-    //     ]
-    // }
-
 ]
